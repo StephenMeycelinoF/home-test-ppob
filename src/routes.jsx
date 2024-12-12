@@ -7,11 +7,13 @@ import Transaction from "./pages/Transaction";
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Error from "./pages/Error";
 
 export const routes = [
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <Error />,
     children: [
       { path: "/", element: <Home /> },
       { path: "topup", element: <Topup /> },
@@ -21,6 +23,7 @@ export const routes = [
   {
     path: "/auth",
     element: <AuthLayout />,
+    errorElement: <Error />,
     children: [
       { path: "login", element: <Login /> },
       { path: "register", element: <Register /> },
