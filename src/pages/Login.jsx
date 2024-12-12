@@ -64,7 +64,7 @@ function Login() {
       if (result.payload) {
         setEmail("");
         setPassword("");
-        navigate("/"); // Arahkan ke halaman utama setelah login sukses
+        navigate("/"); 
       }
     });
   };
