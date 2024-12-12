@@ -6,9 +6,11 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className="px-4 pt-6 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] ">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
     </div>
   );
 }

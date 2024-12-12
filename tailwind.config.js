@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'saldo': "url('./src/assets/bg_saldo.png')",
+      }
+    },
   },
   plugins: [],
 }
