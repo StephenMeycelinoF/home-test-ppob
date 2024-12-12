@@ -5,16 +5,16 @@ export const Navbar = () => {
   return (
     <header className="w-full h-16 flex justify-between items-center mx-auto px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] border-b border-gray-200">
       {/* Logo */}
-      <div className="flex items-center gap-2 font-semibold">
+      <NavLink to="/" className="flex items-center gap-2 font-semibold">
         <img src={logo} alt="LOGO" className="h-10 w-auto" />
         <h3>SIMS PPOB</h3>
-      </div>
+      </NavLink>
 
       {/* Menu */}
       <ul className="flex items-center gap-4 font-medium ">
         <li>
           <NavLink
-            to="/top-up"
+            to="/topup"
             className={({ isActive }) =>
               isActive ? "text-red-500" : "hover:text-red-500"
             }
