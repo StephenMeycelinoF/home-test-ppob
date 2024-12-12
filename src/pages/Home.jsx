@@ -1,9 +1,9 @@
 import promos from "../data/promoData";
 import AccountBalance from "../components/AccountBalance";
 
-export const Home = () => {
+function Home() {
   return (
-    <div className="space-y-8">
+    <section className="space-y-8">
       <AccountBalance />
 
       <div className="relative flex justify-center">
@@ -19,6 +19,8 @@ export const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-};
+}
+
+export default Home;

@@ -19,7 +19,7 @@ function Topup() {
   const topUpOptions = [10000, 20000, 50000, 100000, 250000, 500000];
 
   return (
-    <div className="space-y-8">
+    <section className="space-y-8">
       <AccountBalance />
 
       <div>
@@ -61,7 +61,7 @@ function Topup() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
